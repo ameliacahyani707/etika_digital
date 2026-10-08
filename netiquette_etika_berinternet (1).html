@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netiquette: Etika Berinternet & Keamanan Digital</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                        },
+                        tealBrand: {
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #0f766e 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-3">
+                    <span class="p-2 bg-indigo-600 text-white rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </span>
+                    <span class="font-bold text-xl text-slate-900 tracking-tight">Netiquette Hub</span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex gap-8 font-medium text-sm text-slate-600">
+                    <a href="#prinsip" class="hover:text-indigo-600 transition">Prinsip Utama</a>
+                    <a href="#panduan" class="hover:text-indigo-600 transition">Panduan Praktis</a>
+                    <a href="#kuis" class="hover:text-indigo-600 transition">Kuis Interaktif</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-slate-900 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#prinsip" class="block py-2 text-slate-600 font-medium">Prinsip Utama</a>
+            <a href="#panduan" class="block py-2 text-slate-600 font-medium">Panduan Praktis</a>
+            <a href="#kuis" class="block py-2 text-slate-600 font-medium">Kuis Interaktif</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-hero text-white py-20 lg:py-28 px-4 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 bg-indigo-500/30 backdrop-blur-md rounded-full text-indigo-200 text-sm font-semibold mb-6 border border-indigo-400/30">
+                <i class="fa-solid fa-graduation-cap mr-2"></i>Tugas Kuliah Literasi Digital
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Netiquette: Etika Berinternet & <br class="hidden sm:block"><span class="text-teal-300">Keamanan Digital</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed mb-8">
+                Panduan praktis berinteraksi secara bijak, aman, dan bertanggung jawab di ruang siber. Mari ciptakan ekosistem digital yang positif dan inklusif bersama!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#prinsip" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-teal-500/25 transition">
+                    Pelajari Prinsip
+                </a>
+                <a href="#kuis" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-xl border border-white/20 backdrop-blur-md transition">
+                    Uji Pemahaman (Kuis)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Prinsip Utama Netiquette -->
+    <section id="prinsip" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Prinsip Utama Netiquette</h2>
+            <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Landasan penting yang wajib dipahami oleh setiap pengakses ruang digital modern.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 card-hover flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Menjaga Kesantunan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Gunakan bahasa yang sopan dan hindari penggunaan huruf kapital berlebihan yang dapat dipersepsikan sebagai bentakan atau teriakan.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-indigo-600 bg-indigo-50 p-2.5 rounded-lg border border-indigo-100">
+                    <i class="fa-solid fa-circle-info mr-1"></i> "Ingatlah bahwa di balik layar ada manusia nyata."
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 card-hover flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-teal-100 text-teal-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Menghormati Privasi</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Jangan pernah membagikan informasi pribadi (*DOXXING*), foto, atau percakapan privat orang lain tanpa persetujuan eksplisit dari mereka.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-teal-700 bg-teal-50 p-2.5 rounded-lg border border-teal-100">
+                    <i class="fa-solid fa-lock mr-1"></i> Lindungi privasi Anda dan hormati privasi orang lain.
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 card-hover flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Berpikir Sebelum Mengunggah</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Saring sebelum *sharing*. Pertimbangkan apakah postingan Anda akan merugikan diri sendiri atau orang lain di masa yang akan datang.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-amber-700 bg-amber-50 p-2.5 rounded-lg border border-amber-100">
+                    <i class="fa-solid fa-lightbulb mr-1"></i> Pertimbangkan dampak jangka panjang konten Anda.
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 card-hover flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Menghindari Hoaks</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Selalu verifikasi kebenaran informasi sebelum membagikannya. Gunakan sumber terpercaya dan jangan mudah terprovokasi oleh judul *clickbait*.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-rose-700 bg-rose-50 p-2.5 rounded-lg border border-rose-100">
+                    <i class="fa-solid fa-check-double mr-1"></i> Cek fakta sebelum sebar informasi!
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 card-hover flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                <div>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Menjaga Jejak Digital</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Apa yang diunggah di internet akan tersimpan secara permanen. Bangun reputasi digital yang positif untuk masa depan karier Anda.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-blue-700 bg-blue-50 p-2.5 rounded-lg border border-blue-100">
+                    <i class="fa-solid fa-globe mr-1"></i> Jejak digital bersifat abadi.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Tips & Panduan Praktis -->
+    <section id="panduan" class="py-16 bg-slate-100/70 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Panduan & Action Plan Praktis</h2>
+                <p class="mt-3 text-slate-600">Langkah konkret menjaga keamanan dan kenyamanan berinternet.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Checklist Jejak Digital -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-list-check text-indigo-600"></i>
+                        Checklist Keamanan Jejak Digital
+                    </h3>
+                    <p class="text-slate-600 text-sm mb-6">Tandai langkah-langkah yang sudah Anda terapkan hari ini:</p>
+                    
+                    <div class="space-y-4" id="checklist">
+                        <label class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 border border-slate-100 cursor-pointer transition">
+                            <input type="checkbox" class="mt-1 w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                            <span class="text-sm text-slate-700">Mengaktifkan Autentikasi Dua Faktor (2FA) di semua akun sosial media dan surel.</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 border border-slate-100 cursor-pointer transition">
+                            <input type="checkbox" class="mt-1 w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                            <span class="text-sm text-slate-700">Memeriksa kembali pengaturan privasi akun sosial media secara berkala.</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 border border-slate-100 cursor-pointer transition">
+                            <input type="checkbox" class="mt-1 w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                            <span class="text-sm text-slate-700">Menghapus aplikasi lama yang sudah tidak terpakai dari perangkat Anda.</span>
+                        </label>
+                        <label class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 border border-slate-100 cursor-pointer transition">
+                            <input type="checkbox" class="mt-1 w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                            <span class="text-sm text-slate-700">Menghindari pengunggahan dokumen penting (KTP, SIM, Tiket penerbangan) ke ruang publik.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Respon Cyberbullying -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-hand-fist text-rose-600"></i>
+                        Cara Merespons Cyberbullying
+                    </h3>
+                    <p class="text-slate-600 text-sm mb-6">Langkah bijak saat Anda atau kerabat mengalami perundungan siber:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 font-bold rounded-lg flex items-center justify-center">1</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800">Jangan Langsung Membalas</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Membalas dengan emosi dapat memperkeruh situasi dan memberi pengganggu kepuasan.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 font-bold rounded-lg flex items-center justify-center">2</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800">Simpan Bukti (Screenshot)</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Dokumentasikan pesan, komentar, atau konten yang melecehkan sebagai barang bukti.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 font-bold rounded-lg flex items-center justify-center">3</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800">Blokir & Laporkan (Report)</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Gunakan fitur pemblokiran dan pelaporan yang tersedia di platform sosial media tersebut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Kuis Interaktif Netiquette -->
+    <section id="kuis" class="py-16 sm:py-24 max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">Uji Kemampuan</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Kuis Etika Berinternet</h2>
+                <p class="text-slate-600 text-sm mt-1">Uji seberapa paham Anda mengenai etika & keselamatan siber.</p>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quiz-container">
+                <div class="mb-6 flex justify-between items-center text-sm font-semibold text-slate-500">
+                    <span id="question-number">Pertanyaan 1 dari 5</span>
+                    <span id="score-display" class="text-indigo-600">Skor: 0</span>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="w-full bg-slate-100 h-2 rounded-full mb-8 overflow-hidden">
+                    <div id="progress-bar" class="bg-indigo-600 h-full w-1/5 transition-all duration-300"></div>
+                </div>
+
+                <!-- Question Text -->
+                <h3 id="question-text" class="text-lg sm:text-xl font-bold text-slate-800 mb-6 leading-snug">
+                    Memuat pertanyaan...
+                </h3>
+
+                <!-- Options -->
+                <div id="options-container" class="space-y-3">
+                    <!-- Options injected via JavaScript -->
+                </div>
+
+                <!-- Instant Feedback -->
+                <div id="feedback-box" class="hidden mt-6 p-4 rounded-xl text-sm font-medium"></div>
+
+                <!-- Next Button -->
+                <div class="mt-8 flex justify-end">
+                    <button id="next-btn" onclick="nextQuestion()" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2.5 rounded-xl transition">
+                        Lanjut <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Results (Hidden initially) -->
+            <div id="result-container" class="hidden text-center py-8">
+                <div class="w-20 h-20 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900">Kuis Selesai!</h3>
+                <p class="text-slate-600 mt-2">Terima kasih telah berpartisipasi menguji pemahaman etika digital Anda.</p>
+                
+                <div class="my-6 p-6 bg-slate-50 rounded-2xl max-w-xs mx-auto border border-slate-200">
+                    <span class="text-slate-500 text-xs font-semibold uppercase">Skor Akhir Anda</span>
+                    <div id="final-score" class="text-4xl font-extrabold text-indigo-600 mt-1">0 / 5</div>
+                </div>
+
+                <button onclick="restartQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl transition shadow-lg shadow-indigo-600/20">
+                    <i class="fa-solid fa-rotate-right mr-2"></i>Coba Lagi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center items-center gap-2 text-white font-bold text-lg mb-4">
+                <i class="fa-solid fa-shield-halved text-indigo-400"></i> Netiquette Hub
+            </div>
+            <p class="text-sm text-slate-400 max-w-md mx-auto mb-6">
+                Proyek Website Tugas Kuliah Literasi Digital — Mengedukasi Masyarakat untuk Penggunaan Internet yang Luar Biasa & Aman.
+            </p>
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Netiquette Digital Literacy. Built for educational purposes.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quiz Data
+        const quizData = [
+            {
+                question: "Apa yang sebaiknya dilakukan sebelum membagikan ulang (share) sebuah berita di media sosial?",
+                options: [
+                    "Langsung membagikan jika judulnya sangat menarik perhatian.",
+                    "Memeriksa kebenaran dan keabsahan sumber berita terlebih dahulu.",
+                    "Menambahkan opini pribadi yang provokatif agar heboh.",
+                    "Membagikannya ke semua grup keluarga tanpa membaca isinya."
+                ],
+                correct: 1,
+                explanation: "Verifikasi fakta dan keabsahan sumber adalah prinsip paling utama untuk mencegah penyebaran hoaks."
+            },
+            {
+                question: "Mengapa penggunaan huruf kapital SEMUANYA (Caps Lock) disarankan untuk dihindari saat berkirim pesan?",
+                options: [
+                    "Karena menghabiskan baterai ponsel.",
+                    "Karena tulisan menjadi lebih sulit dibaca.",
+                    "Dalam etika digital, kapital penuh dianggap seperti berteriak atau membentak.",
+                    "Karena dilarang oleh aturan penyedia layanan surel."
+                ],
+                correct: 2,
+                explanation: "Menggunakan huruf kapital secara keseluruhan di dunia digital sering dipersepsikan sebagai ekspresi marah/berteriak."
+            },
+            {
+                question: "Tindakan apa yang dikategorikan sebagai pelanggaran privasi digital (Doxxing)?",
+                options: [
+                    "Mengunggah foto pemandangan alam.",
+                    "Menyebarkan informasi pribadi seseorang (seperti alamat/KTP) tanpa izin.",
+                    "Mengubah kata sandi akun pribadi secara berkala.",
+                    "Menandai teman pada foto acara bersama."
+                ],
+                correct: 1,
+                explanation: "Doxxing adalah praktik menyebarkan informasi pribadi orang lain di internet tanpa persetujuan mereka."
+            },
+            {
+                question: "Apa tindakan terbaik yang harus dilakukan jika Anda mengalami perundungan siber (cyberbullying)?",
+                options: [
+                    "Membalas pelaku dengan kata-kata yang lebih kasar.",
+                    "Menghapus akun dan merusak ponsel.",
+                    "Simpan bukti screenshot, blokir akun pelaku, dan laporkan.",
+                    "Pura-pura tidak tahu dan tidak menceritakannya kepada siapapun."
+                ],
+                correct: 2,
+                explanation: "Menyimpan bukti dan melaporkan/memblokir pelaku adalah langkah aman terbaik untuk memutus aksi perundungan."
+            },
+            {
+                question: "Apa yang dimaksud dengan 'Jejak Digital' (Digital Footprint)?",
+                options: [
+                    "Bekas sidik jari yang tertempel pada layar ponsel.",
+                    "Rekam jejak seluruh aktivitas dan postingan seseorang di internet.",
+                    "Aplikasi penunjuk arah lokasi berbasis GPS.",
+                    "Riwayat pembelian perangkat keras komputer."
+                ],
+                correct: 1,
+                explanation: "Jejak digital mencakup semua data yang Anda tinggalkan saat menggunakan internet (postingan, komentar, riwayat pencarian)."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizData[currentQuestion];
+            
+            document.getElementById('question-number').innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizData.length}`;
+            document.getElementById('question-text').innerText = q.question;
+            document.getElementById('progress-bar').style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+            
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            const feedbackBox = document.getElementById('feedback-box');
+            feedbackBox.classList.add('hidden');
+            document.getElementById('next-btn').classList.add('hidden');
+
+            q.options.forEach((option, index) => {
+                const btn = document.createElement('button');
+                btn.className = `w-full text-left p-4 rounded-xl border border-slate-200 font-medium text-sm text-slate-700 hover:bg-slate-50 transition flex items-center justify-between group`;
+                btn.onclick = () => selectOption(index);
+                btn.innerHTML = `
+                    <span>${option}</span>
+                    <i class="fa-regular fa-circle text-slate-300 group-hover:text-indigo-500"></i>
+                `;
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function selectOption(selectedIndex) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizData[currentQuestion];
+            const optionsContainer = document.getElementById('options-container');
+            const buttons = optionsContainer.children;
+            const feedbackBox = document.getElementById('feedback-box');
+
+            if (selectedIndex === q.correct) {
+                score++;
+                document.getElementById('score-display').innerText = `Skor: ${score}`;
+                buttons[selectedIndex].className = "w-full text-left p-4 rounded-xl border-2 border-emerald-500 bg-emerald-50 text-emerald-900 font-medium text-sm flex items-center justify-between";
+                buttons[selectedIndex].querySelector('i').className = "fa-solid fa-circle-check text-emerald-600 text-lg";
+                
+                feedbackBox.className = "mt-6 p-4 rounded-xl text-sm font-medium bg-emerald-50 border border-emerald-200 text-emerald-800";
+                feedbackBox.innerHTML = `<i class="fa-solid fa-circle-check mr-2"></i> Benar! ${q.explanation}`;
+            } else {
+                buttons[selectedIndex].className = "w-full text-left p-4 rounded-xl border-2 border-rose-500 bg-rose-50 text-rose-900 font-medium text-sm flex items-center justify-between";
+                buttons[selectedIndex].querySelector('i').className = "fa-solid fa-circle-xmark text-rose-600 text-lg";
+
+                // Highlight correct answer
+                buttons[q.correct].className = "w-full text-left p-4 rounded-xl border-2 border-emerald-500 bg-emerald-50 text-emerald-900 font-medium text-sm flex items-center justify-between";
+                buttons[q.correct].querySelector('i').className = "fa-solid fa-circle-check text-emerald-600 text-lg";
+
+                feedbackBox.className = "mt-6 p-4 rounded-xl text-sm font-medium bg-rose-50 border border-rose-200 text-rose-800";
+                feedbackBox.innerHTML = `<i class="fa-solid fa-triangle-exclamation mr-2"></i> Kurang Tepat. ${q.explanation}`;
+            }
+
+            feedbackBox.classList.remove('hidden');
+            document.getElementById('next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizData.length) {
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            const resultContainer = document.getElementById('result-container');
+            resultContainer.classList.remove('hidden');
+            document.getElementById('final-score').innerText = `${score} / ${quizData.length}`;
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('score-display').innerText = `Skor: 0`;
+            document.getElementById('result-container').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        // Initialize quiz on load
+        window.onload = function() {
+            loadQuestion();
+        };
+    </script>
+</body>
+</html>
